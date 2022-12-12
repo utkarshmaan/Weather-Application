@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap');
+        *{
+            margin:0;
+            padding:0;
+        }
+       form{
+        background-image: url("https://cdn.dribbble.com/users/925716/screenshots/3333720/attachments/722375/night.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+       border-radius: 20px;
+        height:680px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content:center;
+        align-items:flex-end;
+        font-family: 'Roboto', sans-serif;
+        width:35%;
+        margin:20px auto;
+       }
+       form i{
+        font-size: 50px;
+        display:inline;
+       }
+       form i:nth-child(1){
+        color:rgb(255, 230, 0);
+       }
+       form i:nth-child(2){
+        color:white;
+       }
+       form i:nth-child(3){
+        color:gray;
+       }
+       form .icons{
+        display:flex;
+        justify-content: space-around;
+        margin-top: -100px;
+        margin-bottom: 50px;
+        width: 100%;
+       }
+
+.formbtn{
+    padding:10px;
+    margin: 10px auto;
+    border-radius: 10px;
+    border:1px solid black;
+    background-color: black;
+    color:white;
+    width:100px;
+    cursor: pointer;
+}
+form label{
+    text-align: center;
+    margin: 20px auto;
+    font-size: 2.5rem;
+
+}
+input{
+    display: block;
+    width:300px;
+    outline:none;
+    margin: 10px auto;
+    border-radius: 5px;
+    border-width: 0;
+    padding:10px;
+    font-size: 1.5rem;
+    height:20px;
+}
+    </style>
+</head>
+<body>
+
+    <!-- takes you to location with '/' and execute method post -->
+<form action="/" method="post" class="wf">
+    <div class="icons">
+    <i class="fa-solid fa-sun"></i>
+    <i class="fa-solid fa-cloud"></i>
+    <i class="fa-solid fa-moon"></i>
+</div>
+    <label>City Name</label>
+    <input type="text" name="cityName">
+    <button type="submit" class="formbtn">Search</button>
+    
+</form>
+</body>
+</html>
